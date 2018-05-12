@@ -4,10 +4,10 @@ import time
 
 
 def method_pika():
-    credentials = pika.PlainCredentials('joseph', 'holder12')
+    credentials = pika.PlainCredentials('username', 'password')
     connection = pika.BlockingConnection(
         pika.ConnectionParameters(
-            host='192.168.0.47',
+            host='host',
             credentials=credentials,
             heartbeat=0,
             # heartbeat_interval=0,
